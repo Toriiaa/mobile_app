@@ -13,6 +13,7 @@ class _SignInState extends State<SignIn> {
       MaterialApp(
         debugShowCheckedModeBanner: false,
         home:  Scaffold(
+            resizeToAvoidBottomInset: false,
             body: Column(
               children: [
                 Center(
@@ -42,7 +43,7 @@ class _SignInState extends State<SignIn> {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         )),
-                    keyboardType: TextInputType.number,
+                    keyboardType: TextInputType.emailAddress,
                   ),
                   margin: EdgeInsets.only(top: 50.0),
                   height: 48.0,
@@ -55,7 +56,8 @@ class _SignInState extends State<SignIn> {
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(5.0),
                         )),
-                    keyboardType: TextInputType.number,
+                    obscureText: true,
+                    keyboardType: TextInputType.visiblePassword,
                   ),
                   margin: EdgeInsets.only(top: 16.0),
                   height: 48.0,
@@ -195,7 +197,7 @@ class _SignInState extends State<SignIn> {
                       )
                     ],
                   ),
-                  margin: EdgeInsets.only(top: 35.0),
+                  //margin: EdgeInsets.only(top: 35.0),
                 )
               ],
             )),

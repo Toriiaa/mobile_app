@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/screens/sign_up.dart';
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -186,8 +187,13 @@ class _SignInState extends State<SignIn> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text("Don't have an account?"),
-                      TextButton(
-                        onPressed: null,
+                      
+                         TextButton(
+                        onPressed:() {  
+  Navigator.push( context,  
+    MaterialPageRoute(builder: (context) => SignUp()),  
+  );  
+}   ,
                         child: (Text(
                           "Sign up here",
                           style: TextStyle(
@@ -195,6 +201,14 @@ class _SignInState extends State<SignIn> {
                           ),
                         )),
                       )
+                         
+                        
+                      
+
+
+
+
+                      
                     ],
                   ),
                   //margin: EdgeInsets.only(top: 35.0),

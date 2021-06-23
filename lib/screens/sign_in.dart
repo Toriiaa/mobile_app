@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/util/general_use.dart';
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -18,7 +19,7 @@ class _SignInState extends State<SignIn> {
               children: [
                 Center(
                   child: Container(
-                    child: ProfileImage(),
+                    child: MainLogoImage(48.0,48.0),
                     margin: EdgeInsets.only(top: 60.0),
                   ),
                 ),
@@ -203,65 +204,5 @@ class _SignInState extends State<SignIn> {
             )),
       ) ;
 
-  }
-}
-
-class ProfileImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 48.0,
-      height: 48.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            fit: BoxFit.cover,
-            image: AssetImage('images/myInternLogocCrcle.jpg')),
-        borderRadius: BorderRadius.all(Radius.circular(60.0)),
-      ),
-    );
-  }
-}
-
-class GoogleImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 15.0,
-      height: 15.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            fit: BoxFit.cover, image: AssetImage('images/google-logo.jpg')),
-        borderRadius: BorderRadius.all(Radius.circular(60.0)),
-      ),
-    );
-  }
-}
-
-class AppleImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 15.0,
-      height: 15.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            fit: BoxFit.cover, image: AssetImage('images/login-apple.png')),
-      ),
-    );
-  }
-}
-
-class SsoImage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 15.0,
-      height: 15.0,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            fit: BoxFit.cover, image: AssetImage('images/login-sso.png')),
-
-      ),
-    );
   }
 }

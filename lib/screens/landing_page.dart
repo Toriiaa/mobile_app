@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app/util/general_use.dart';
 import 'package:mobile_app/screens/sign_in.dart';
+import 'package:mobile_app/screens/sign_up.dart';
 
 class GeneralGroup extends StatefulWidget {
   const GeneralGroup({Key? key}) : super(key: key);
@@ -21,6 +22,9 @@ class _GeneralGroupState extends State<GeneralGroup> {
         MaterialPageRoute(builder: (context) => SignIn()),
       );
     } else if (choice.title == "Sign up") {
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SignUp()),);
     } else if (choice.title == "Student") {
     } else {}
   }

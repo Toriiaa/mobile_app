@@ -163,25 +163,6 @@ class _GeneralGroupState extends State<GeneralGroup> {
   }
 }
 
-class RemoteMeetingPana extends StatelessWidget {
-  RemoteMeetingPana(this.width, this.height);
-  final double width;
-  final double height;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 15.0,
-      height: 300.0,
-      decoration: BoxDecoration(
-        color: Color.fromARGB(255, 203, 243, 240),
-        image: DecorationImage(
-            fit: BoxFit.fill,
-            image: AssetImage('images/Remote-meeting-pana.png')),
-      ),
-    );
-  }
-}
-
 // This app is a stateful, it tracks the user's current choice.
 
 class Choice {

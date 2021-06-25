@@ -91,7 +91,7 @@ class _SignInState extends State<SignIn> {
                   alignment: Alignment.centerRight,
                   child: TextButton(
                     onPressed: null,
-                    child: Text("Forgot password?"),
+                    child: Text("Forgot password?",style: TextStyle(  decoration: TextDecoration.lineThrough,),),
                   ),
                 ),
 

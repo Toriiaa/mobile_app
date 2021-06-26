@@ -52,7 +52,7 @@ class LandingScreenPart4Image1 extends StatelessWidget {
       decoration: BoxDecoration(
         image: DecorationImage(
             fit: BoxFit.none,
-            image: AssetImage('images/LandingScreenPart4Image1.jpg')),
+            image: AssetImage('images/LandingScreenPart4Image1.png')),
 
       ),
     );
@@ -91,6 +91,63 @@ class LandingScreenPart4Image3 extends StatelessWidget {
         image: DecorationImage(
             fit: BoxFit.none,
             image: AssetImage('images/LandingScreenPart4Image3.jpg')),
+
+      ),
+    );
+  }
+}
+class LandingScreenPart6Image1 extends StatelessWidget {
+  LandingScreenPart6Image1(this.width, this.height);
+  final double width;
+  final double height;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage('images/LandingScreenPart6Image1.jpg')),
+
+      ),
+    );
+  }
+}
+class LandingScreenPart6Image2 extends StatelessWidget {
+  LandingScreenPart6Image2(this.width, this.height);
+  final double width;
+  final double height;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage('images/LandingScreenPart6Image2.jpg')),
+
+      ),
+    );
+  }
+}
+class LandingPageMyInternLogo extends StatelessWidget {
+  LandingPageMyInternLogo(this.width, this.height);
+  final double width;
+  final double height;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+
+      width: width,
+      height: height,
+      decoration: BoxDecoration(
+        image: DecorationImage(
+            fit: BoxFit.cover,
+            image: AssetImage('images/LandingPageMyInternLogo.png')),
 
       ),
     );

@@ -4,9 +4,6 @@ import 'package:mobile_app/screens/sign_in.dart';
 import 'package:mobile_app/screens/sign_up.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
-import 'package:flutter_svg/avd.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:mobile_app/util/general_use.dart';
 
 class GeneralGroup extends StatefulWidget {
   const GeneralGroup({Key? key}) : super(key: key);
@@ -15,12 +12,9 @@ class GeneralGroup extends StatefulWidget {
   _GeneralGroupState createState() => _GeneralGroupState();
 }
 
-
 Color themeColor = Color.fromARGB(255, 0, 83, 135);
 
 class _GeneralGroupState extends State<GeneralGroup> {
-  Choice _selectedChoice = choices[0]; // The app's "state".
-
   void _select(Choice choice) {
     // Causes the app to rebuild with the new _selectedChoice.
 
@@ -37,8 +31,6 @@ class _GeneralGroupState extends State<GeneralGroup> {
     } else if (choice.title == "Student") {
     } else {}
   }
-
-
 
   @override
   Widget build(BuildContext context) {
@@ -100,7 +92,7 @@ class _GeneralGroupState extends State<GeneralGroup> {
         body: ListView(
           children: [
             //part 1
-            RemoteMeetingPana(1,1),
+            RemoteMeetingPana(1, 1),
             //RemoteMeetingPana(20, 18),
             //part 2
             Container(
@@ -484,10 +476,8 @@ class _GeneralGroupState extends State<GeneralGroup> {
                               child: Column(
                                 children: [
                                   Container(
-                                    margin: EdgeInsets.only(
-                                      top: 24.0,
-                                      right: 30
-                                    ),
+                                    margin:
+                                        EdgeInsets.only(top: 24.0, right: 30),
                                     child: Text(
                                       "Secure payment",
                                       style: TextStyle(
@@ -625,23 +615,20 @@ class _GeneralGroupState extends State<GeneralGroup> {
                           ),
                         ),
                         Container(
-                          width: 250.0,
+                            width: 250.0,
                             margin: EdgeInsets.only(top: 20.0),
                             child: Text(
                               "Looking for a temporary or part-time job? We have a range of jobs perfect to help you gain necessary skills.",
-
                             )),
                         Container(
-
                             margin: EdgeInsets.only(top: 24.0),
-                            child:  ElevatedButton(
+                            child: ElevatedButton(
                                 child: Text(
                                   "Sign Up",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
                                 ),
-
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
                                   minimumSize: Size(212.0, 50.0),
@@ -651,7 +638,6 @@ class _GeneralGroupState extends State<GeneralGroup> {
                                     borderRadius: BorderRadius.circular(30),
                                   ),
                                 ))),
-
                       ],
                     ),
                     height: 530.0,
@@ -696,23 +682,20 @@ class _GeneralGroupState extends State<GeneralGroup> {
                           ),
                         ),
                         Container(
-                          width: 250.0,
+                            width: 250.0,
                             margin: EdgeInsets.only(top: 20.0),
                             child: Text(
                               "Looking to hire a temporary or part-time talent? Post a Job Ad and find amazing students to work with your company!",
-
                             )),
                         Container(
-
                             margin: EdgeInsets.only(top: 24.0),
-                            child:  ElevatedButton(
+                            child: ElevatedButton(
                                 child: Text(
                                   "Sign Up",
                                   style: TextStyle(
                                     color: Colors.white,
                                   ),
                                 ),
-
                                 onPressed: () {},
                                 style: ElevatedButton.styleFrom(
                                   minimumSize: Size(212.0, 50.0),
@@ -722,7 +705,6 @@ class _GeneralGroupState extends State<GeneralGroup> {
                                     borderRadius: BorderRadius.circular(30),
                                   ),
                                 ))),
-
                       ],
                     ),
                     height: 530.0,

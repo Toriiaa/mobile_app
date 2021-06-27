@@ -137,6 +137,26 @@ const Text("Gender"),
                   ),
                   margin: EdgeInsets.only(top: 18.0),
                 ),
+
+
+                Container(
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text("Don't have an account?"),
+                      TextButton(
+                        onPressed: null,
+                        child: (Text(
+                          "Log in",
+                          style: TextStyle(
+                            color: Color.fromARGB(255, 46, 196, 182),
+                          ),
+                        )),
+                      )
+                    ],
+                  ),
+                  //margin: EdgeInsets.only(top: 35.0),
+                )
       ]
             ),
 

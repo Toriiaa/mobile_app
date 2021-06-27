@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 import 'package:mobile_app/screens/landing_page.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

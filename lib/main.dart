@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-
-
-import 'package:mobile_app/screens/landing_page.dart';
+import 'package:mobile_app/screens/sign_up.dart';
 
 void main() {
-  runApp( Home());
+  runApp(Home());
 }
+
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
@@ -14,11 +13,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: GeneralGroup()
-    );
+    return MaterialApp(home: SignUp());
   }
 }

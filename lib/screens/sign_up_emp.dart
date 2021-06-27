@@ -1,12 +1,15 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_app/util/general_use.dart';
 
-class SignUp extends StatefulWidget {
+class SignUpEmpScreen extends StatefulWidget {
+  const SignUpEmpScreen({Key? key}) : super(key: key);
+
   @override
-  SignUpState createState() => SignUpState();
+  _SignUpEmpScreenState createState() => _SignUpEmpScreenState();
 }
 
-class SignUpState extends State<SignUp> {
+class _SignUpEmpScreenState extends State<SignUpEmpScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,8 +122,8 @@ class SignUpState extends State<SignUp> {
                       height: 24.0,
                     ),
                     TextFormColumn(
-                      label: 'School',
-                      hintText: 'Name of your school',
+                      label: 'Business name',
+                      hintText: 'Name of your business/organization',
                     ),
                     SizedBox(
                       height: 24.0,
@@ -128,7 +131,7 @@ class SignUpState extends State<SignUp> {
                     Row(
                       children: [
                         buildDropDownColumn(
-                          hintText: 'Level',
+                          hintText: 'Your role',
                         ),
                         SizedBox(
                           width: 16.0,
@@ -138,8 +141,8 @@ class SignUpState extends State<SignUp> {
                             height: 80.0,
                             width: 175.0,
                             child: TextFormColumn(
-                              label: 'Skills or interests',
-                              hintText: 'Type your skills here',
+                              label: 'Office address',
+                              hintText: 'Type address here',
                             ),
                           ),
                         )

@@ -259,3 +259,126 @@ class SignInMenuImage extends StatelessWidget {
     );
   }
 }
+
+Container CustomCircle({required Color color}) {
+  return Container(
+    height: 8.0,
+    width: 8.0,
+    decoration: BoxDecoration(
+      shape: BoxShape.circle,
+      color: color,
+    ),
+  );
+}
+
+Column TextFormColumn({
+  required String label,
+  required String hintText,
+  obscure,
+}) {
+  return Column(
+    crossAxisAlignment: CrossAxisAlignment.start,
+    children: [
+      Text(
+        label,
+        style: TextStyle(
+          fontSize: 16.0,
+          fontWeight: FontWeight.w700,
+          color: Colors.black,
+        ),
+      ),
+      Container(
+        child: TextField(
+          decoration: InputDecoration(
+              hintText: hintText,
+              hintStyle: TextStyle(
+                fontWeight: FontWeight.w400,
+                fontSize: 16,
+                color: Color(0Xff444150),
+              ),
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(5.0),
+              )),
+          obscureText: obscure != true ? false : true,
+          keyboardType: TextInputType.visiblePassword,
+        ),
+        margin: EdgeInsets.only(top: 8.0),
+        height: 48.0,
+      ),
+    ],
+  );
+}
+
+Container buildDropDownColumn({required String hintText}) {
+  return Container(
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          hintText,
+          style: TextStyle(
+            fontSize: 16.0,
+            fontWeight: FontWeight.w700,
+            color: Colors.black,
+          ),
+        ),
+        SizedBox(
+          height: 8.0,
+        ),
+        Container(
+          height: 48.0,
+          width: 175.0,
+          child: DropdownButtonFormField(
+            icon: Icon(
+              Icons.keyboard_arrow_down_outlined,
+              color: Colors.black,
+            ),
+            items: null,
+            decoration: InputDecoration(
+                border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(5.0))),
+          ),
+        ),
+      ],
+    ),
+  );
+}
+
+RichText signUpRichText() {
+  return RichText(
+    textAlign: TextAlign.center,
+    text: TextSpan(
+        text: 'By signing up, you are agreeing to our',
+        style: TextStyle(
+          fontWeight: FontWeight.w400,
+          fontSize: 12,
+          color: Color(0Xff444150),
+        ),
+        children: [
+          TextSpan(
+            text: ' Terms & Conditions ',
+            style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+              color: Color(0Xff2EC4B6),
+            ),
+          ),
+          TextSpan(
+            text: '\nand',
+            style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+              color: Color(0Xff444150),
+            ),
+          ),
+          TextSpan(
+            text: ' Privacy Policy ',
+            style: TextStyle(
+              fontWeight: FontWeight.w400,
+              fontSize: 12,
+              color: Color(0Xff2EC4B6),
+            ),
+          ),
+        ]),
+  );
+}

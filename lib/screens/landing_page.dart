@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mobile_app/util/general_use.dart';
 import 'package:mobile_app/screens/sign_in.dart';
 import 'package:mobile_app/screens/sign_up.dart';
+import 'package:mobile_app/screens/sign_up _stu-page_2.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
@@ -29,6 +30,9 @@ class _GeneralGroupState extends State<GeneralGroup> {
         MaterialPageRoute(builder: (context) => SignUp()),
       );
     } else if (choice.title == "Student") {
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => SignUpStu2()), );
     } else {}
   }
 

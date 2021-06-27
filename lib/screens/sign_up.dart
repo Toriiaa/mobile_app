@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app/util/general_use.dart';
 // import 'package: flutter/services.dart';
 class SignUp extends StatefulWidget {
 @override
@@ -32,16 +33,25 @@ Widget build(BuildContext context) {
         body: Container(
           child:         Column(
           children: [
+             Center(
+                  child: Container(
+                    child: MainLogoImage(48.0,48.0),
+                    margin: EdgeInsets.only(top: 60.0),
+                  ),
+                ),
             SizedBox(
               height: 20
             ),
             Text(
-              "Welcome to My Intern App"
+              "Welcome!",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 35.0),
             ),
             SizedBox(
               height:20
             ),
-            Text("Already have an account... Log in"),
+            Text("Create an Account",
+            style: TextStyle(fontSize: 25.0),
+            ),
 
             Column(
 
@@ -113,19 +123,17 @@ const Text("Gender"),
         ),
 
 
-
-        Container(
+Container(
                   child: Container(
                     child: RaisedButton(
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(5)),
                       color: Color.fromARGB(255, 46, 196, 182),
                       textColor: Colors.white,
-                      child: Center(
-                        // alignment: Alignment.center,
-                        
+                      child: Container(
+                        alignment: Alignment.center,
                         child: Text(
-                          'Next',
+                          'NEXT',
                           textScaleFactor: 0.8,
                           style: TextStyle(fontSize: 30.0),
                         ),

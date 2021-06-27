@@ -78,6 +78,7 @@ flutter:
      - images/LandingScreenPart6Image1.jpg
      - images/LandingScreenPart6Image2.jpg
      - images/LandingPageMyInternLogo.png
+     - images/registerLoading.png
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
